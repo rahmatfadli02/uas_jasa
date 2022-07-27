@@ -72,9 +72,10 @@ class TransaksiController extends Controller
      */
     public function edit($id)
     {
+        $transaksi = Transaksi ::find($id);
         $mekanik =Mekanik ::all();
         
-        return view('page.transaksi.edit',compact('mekanik'));
+        return view('page.transaksi.edit',compact('mekanik','transaksi'));
     }
 
     /**
