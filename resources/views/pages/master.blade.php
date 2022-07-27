@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AdminLTE 3 | Blank Page</title>
 
+
+    
+    @yield('css')
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -29,7 +33,7 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="../../index3.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
+                <li class="nav-item d-none d-sm-inline-block">  
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
@@ -399,18 +403,18 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../forms/general.html" class="nav-link">
+                                    <a href="/mekanik/index" class="nav-link  ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Mekanik</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../forms/advanced.html" class="nav-link">
+                                    <a href="/transaksi/index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Data Pelanggan</p>
+                                        <p>Data Transaksi</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="../forms/editors.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Transaksi</p>
@@ -421,7 +425,7 @@
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Validation</p>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
                         {{-- <li class="nav-item">
@@ -860,7 +864,7 @@
                 <!-- Default box -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Title</h3>
+                        <h3 class="card-title"></h3>
 
                         <div class="card-tools">
                             <button type="button" class="btn btn-tool" data-card-widget="collapse"
@@ -872,13 +876,15 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card-body">
-                        Start creating your amazing application!
-                    </div>
+                     <div class="card-body">
+                    @yield('mekanik')
+                    </div> 
                     <!-- /.card-body -->
-                    <div class="card-footer">
-                        Footer
-                    </div>
+                    {{-- <div class="card-footer">
+                        //
+                            
+                 
+                    </div> --}}
                     <!-- /.card-footer-->
                 </div>
                 <!-- /.card -->
@@ -912,6 +918,8 @@
     <script src="/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="/dist/js/demo.js"></script>
+    
+    @yield('script')
 </body>
 
 </html>
