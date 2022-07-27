@@ -40,6 +40,7 @@ class TransaksiController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize('create',Transaksi::class);
         $transaksi= new Transaksi();
         $transaksi->nofak =$request->nofak;
         $transaksi->tanggal =$request->tanggal;
@@ -73,7 +74,7 @@ class TransaksiController extends Controller
     public function edit($id)
     {
         $transaksi = Transaksi ::find($id);
-        $mekanik =Mekanik ::all();
+        $mekanik = Mekanik ::all();
         
         return view('page.transaksi.edit',compact('mekanik','transaksi'));
     }

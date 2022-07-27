@@ -41,7 +41,7 @@ class TransaksiPolicy
      */
     public function create(User $user)
     {
-        //
+        return $user->admin =='1';
     }
 
     /**

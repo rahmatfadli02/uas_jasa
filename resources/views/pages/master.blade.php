@@ -409,11 +409,14 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    @can('create',App\Transaksi::class)
                                     <a href="/transaksi/index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Transaksi</p>
                                     </a>
+                                    
                                 </li>
+                                @endcan
                                 {{-- <li class="nav-item">
                                     <a href="../forms/editors.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>

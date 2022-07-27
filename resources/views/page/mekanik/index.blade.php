@@ -9,7 +9,7 @@
             <div class="card-header">
                 <h3 class="card-title">Tabel Mekanik</h3>
 
-                <div class="card-tools">
+                {{-- <div class="card-tools">
                     <div class="input-group input-group-sm" style="width: 150px;">
                         <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
@@ -19,7 +19,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
 
@@ -30,7 +30,7 @@
                 <!-- Scrollable modal -->
 
 
-                <table class="table table-head-fixed text-nowrap">
+                <table class="table table-head-fixed text-nowrap" id="example2" >
                     <!-- Scrollable modal -->
 
                     <div class="card">

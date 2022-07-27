@@ -50,15 +50,7 @@
                         @endforeach
                     </select>  
                 </div> 
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Harga</label>
-                    <input type="text" name="harga" value="{{old('harga')}}"
-                     class="form-control  @error('harga') is-invalid @enderror"  id="exampleInputPassword1">
-                     @error('harga')
-                     <div class="text-danger">{{$message}}</div>
-                     @enderror
-
-                </div>
+          
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Keterangan</label>
                     <input type="text" name="ket" value="{{old('ket')}}"
